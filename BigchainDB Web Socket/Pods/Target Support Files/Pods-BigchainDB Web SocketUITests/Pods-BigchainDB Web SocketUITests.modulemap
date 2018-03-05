@@ -1,0 +1,6 @@
+framework module Pods_BigchainDB_Web_SocketUITests {
+  umbrella header "Pods-BigchainDB Web SocketUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,7 +1,7 @@
 const WebSocket = require('ws')
 const axios = require('axios');
 
-const ws = new WebSocket('wss://test.bigchaindb.com:443/api/v1/streams/valid_transactions')
+const ws = new WebSocket('wss://test.bigchaindb.com/api/v1/streams/valid_transactions')
 
 ws.on('open', () => {
     console.log("CONNECTED")

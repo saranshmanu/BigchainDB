@@ -19,6 +19,24 @@ const painting = {
     year: '1656'
 };
 
+function generateRandomLng() {
+    var num = Math.random()*90;
+    var posorneg = Math.floor(Math.random());
+    if (posorneg == 0) {
+        num = num * -1;
+    }
+    return num;
+}
+
+function generateRandomLat() {
+    var num = Math.random()*180;
+    var posorneg = Math.floor(Math.random());
+    if (posorneg == 0) {
+        num = num * -1;
+    }
+    return num;
+}
+
 function createPaint() {
     // Construct a transaction payload
     const txCreatePaint = BigchainDB.Transaction.makeCreateTransaction(
@@ -29,11 +47,12 @@ function createPaint() {
         // Metadata field, contains information about the transaction itself
         // (can be `null` if not needed)
         {
+            latitude:generateRandomLng().toString(),
+            longitude:generateRandomLat().toString(),
             datetime: new Date().toString(),
-            location: 'Madrid',
             value: {
-                value_eur: '25000000€',
-                value_btc: '2200'
+                detected: '0',
+                healthIssueCode: '8F4598FJ9V5U'
             }
         },
         // Output. For this case we create a simple Ed25519 condition

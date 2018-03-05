@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		952A5267204DB474001DF2BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A5266204DB474001DF2BB /* AppDelegate.swift */; };
+		952A5269204DB474001DF2BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A5268204DB474001DF2BB /* ViewController.swift */; };
+		952A526B204DB474001DF2BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952A526A204DB474001DF2BB /* Assets.xcassets */; };
+		952A526E204DB474001DF2BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952A526C204DB474001DF2BB /* Main.storyboard */; };
+		952A527A204DB475001DF2BB /* BigchainDB_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A5279204DB475001DF2BB /* BigchainDB_macOSTests.swift */; };
+		952A5285204DB475001DF2BB /* BigchainDB_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A5284204DB475001DF2BB /* BigchainDB_macOSUITests.swift */; };
+		C87F3EC7D6679216AFB73160 /* Pods_BigchainDB_macOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B59EA5B0225E9B047305B4 /* Pods_BigchainDB_macOSTests.framework */; };
+		CE72C64655017F19EF6B41D4 /* Pods_BigchainDB_macOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625BCDDAF10B97E88A8975E /* Pods_BigchainDB_macOSUITests.framework */; };
+		FCD854D96A7A0B89AEA0D9D1 /* Pods_BigchainDB_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072C6A6E13E3D3E592A9114 /* Pods_BigchainDB_macOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		952A5276204DB475001DF2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 952A525B204DB474001DF2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952A5262204DB474001DF2BB;
+			remoteInfo = "BigchainDB macOS";
+		};
+		952A5281204DB475001DF2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 952A525B204DB474001DF2BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952A5262204DB474001DF2BB;
+			remoteInfo = "BigchainDB macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19C4B987E576C659C0E26764 /* Pods-BigchainDB macOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigchainDB macOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigchainDB macOSTests/Pods-BigchainDB macOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2270642937B1CEC55F7AB83B /* Pods-BigchainDB macOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigchainDB macOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigchainDB macOSUITests/Pods-BigchainDB macOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3072C6A6E13E3D3E592A9114 /* Pods_BigchainDB_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigchainDB_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55014243DCC9CB2A8778332D /* Pods-BigchainDB macOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigchainDB macOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigchainDB macOSUITests/Pods-BigchainDB macOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5732C39094985D18B7356DFC /* Pods-BigchainDB macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigchainDB macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigchainDB macOS/Pods-BigchainDB macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6F287A1955832A4E210749D9 /* Pods-BigchainDB macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigchainDB macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigchainDB macOS/Pods-BigchainDB macOS.release.xcconfig"; sourceTree = "<group>"; };
+		74B59EA5B0225E9B047305B4 /* Pods_BigchainDB_macOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigchainDB_macOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		952A5263204DB474001DF2BB /* BigchainDB macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BigchainDB macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952A5266204DB474001DF2BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		952A5268204DB474001DF2BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		952A526A204DB474001DF2BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		952A526D204DB474001DF2BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		952A526F204DB474001DF2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952A5270204DB474001DF2BB /* BigchainDB_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BigchainDB_macOS.entitlements; sourceTree = "<group>"; };
+		952A5275204DB475001DF2BB /* BigchainDB macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BigchainDB macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952A5279204DB475001DF2BB /* BigchainDB_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigchainDB_macOSTests.swift; sourceTree = "<group>"; };
+		952A527B204DB475001DF2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952A5280204DB475001DF2BB /* BigchainDB macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BigchainDB macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952A5284204DB475001DF2BB /* BigchainDB_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigchainDB_macOSUITests.swift; sourceTree = "<group>"; };
+		952A5286204DB475001DF2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C625BCDDAF10B97E88A8975E /* Pods_BigchainDB_macOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigchainDB_macOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0D3B1434A962BDE1E0862C /* Pods-BigchainDB macOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigchainDB macOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigchainDB macOSTests/Pods-BigchainDB macOSTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952A5260204DB474001DF2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD854D96A7A0B89AEA0D9D1 /* Pods_BigchainDB_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A5272204DB475001DF2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C87F3EC7D6679216AFB73160 /* Pods_BigchainDB_macOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A527D204DB475001DF2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE72C64655017F19EF6B41D4 /* Pods_BigchainDB_macOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31BDD40EE7FCD42778854E7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5732C39094985D18B7356DFC /* Pods-BigchainDB macOS.debug.xcconfig */,
+				6F287A1955832A4E210749D9 /* Pods-BigchainDB macOS.release.xcconfig */,
+				19C4B987E576C659C0E26764 /* Pods-BigchainDB macOSTests.debug.xcconfig */,
+				CB0D3B1434A962BDE1E0862C /* Pods-BigchainDB macOSTests.release.xcconfig */,
+				55014243DCC9CB2A8778332D /* Pods-BigchainDB macOSUITests.debug.xcconfig */,
+				2270642937B1CEC55F7AB83B /* Pods-BigchainDB macOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70FE73910750BFE7F0DC939C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3072C6A6E13E3D3E592A9114 /* Pods_BigchainDB_macOS.framework */,
+				74B59EA5B0225E9B047305B4 /* Pods_BigchainDB_macOSTests.framework */,
+				C625BCDDAF10B97E88A8975E /* Pods_BigchainDB_macOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		952A525A204DB474001DF2BB = {
+			isa = PBXGroup;
+			children = (
+				952A5265204DB474001DF2BB /* BigchainDB macOS */,
+				952A5278204DB475001DF2BB /* BigchainDB macOSTests */,
+				952A5283204DB475001DF2BB /* BigchainDB macOSUITests */,
+				952A5264204DB474001DF2BB /* Products */,
+				31BDD40EE7FCD42778854E7E /* Pods */,
+				70FE73910750BFE7F0DC939C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		952A5264204DB474001DF2BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				952A5263204DB474001DF2BB /* BigchainDB macOS.app */,
+				952A5275204DB475001DF2BB /* BigchainDB macOSTests.xctest */,
+				952A5280204DB475001DF2BB /* BigchainDB macOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952A5265204DB474001DF2BB /* BigchainDB macOS */ = {
+			isa = PBXGroup;
+			children = (
+				952A5266204DB474001DF2BB /* AppDelegate.swift */,
+				952A5268204DB474001DF2BB /* ViewController.swift */,
+				952A526A204DB474001DF2BB /* Assets.xcassets */,
+				952A526C204DB474001DF2BB /* Main.storyboard */,
+				952A526F204DB474001DF2BB /* Info.plist */,
+				952A5270204DB474001DF2BB /* BigchainDB_macOS.entitlements */,
+			);
+			path = "BigchainDB macOS";
+			sourceTree = "<group>";
+		};
+		952A5278204DB475001DF2BB /* BigchainDB macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				952A5279204DB475001DF2BB /* BigchainDB_macOSTests.swift */,
+				952A527B204DB475001DF2BB /* Info.plist */,
+			);
+			path = "BigchainDB macOSTests";
+			sourceTree = "<group>";
+		};
+		952A5283204DB475001DF2BB /* BigchainDB macOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				952A5284204DB475001DF2BB /* BigchainDB_macOSUITests.swift */,
+				952A5286204DB475001DF2BB /* Info.plist */,
+			);
+			path = "BigchainDB macOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952A5262204DB474001DF2BB /* BigchainDB macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952A5289204DB475001DF2BB /* Build configuration list for PBXNativeTarget "BigchainDB macOS" */;
+			buildPhases = (
+				074EA862133E8721F12BF2A1 /* [CP] Check Pods Manifest.lock */,
+				952A525F204DB474001DF2BB /* Sources */,
+				952A5260204DB474001DF2BB /* Frameworks */,
+				952A5261204DB474001DF2BB /* Resources */,
+				5A19594D707E6565EE6A5C02 /* [CP] Embed Pods Frameworks */,
+				3A64D97844FD51A2D80CC641 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BigchainDB macOS";
+			productName = "BigchainDB macOS";
+			productReference = 952A5263204DB474001DF2BB /* BigchainDB macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		952A5274204DB475001DF2BB /* BigchainDB macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952A528C204DB475001DF2BB /* Build configuration list for PBXNativeTarget "BigchainDB macOSTests" */;
+			buildPhases = (
+				90244ED7E1275D401C34453D /* [CP] Check Pods Manifest.lock */,
+				952A5271204DB475001DF2BB /* Sources */,
+				952A5272204DB475001DF2BB /* Frameworks */,
+				952A5273204DB475001DF2BB /* Resources */,
+				ED317BA831B54CDA682DB0FB /* [CP] Embed Pods Frameworks */,
+				81AE1A50909119317EB9DE76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952A5277204DB475001DF2BB /* PBXTargetDependency */,
+			);
+			name = "BigchainDB macOSTests";
+			productName = "BigchainDB macOSTests";
+			productReference = 952A5275204DB475001DF2BB /* BigchainDB macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		952A527F204DB475001DF2BB /* BigchainDB macOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952A528F204DB475001DF2BB /* Build configuration list for PBXNativeTarget "BigchainDB macOSUITests" */;
+			buildPhases = (
+				A7CB4FFE37D097EF237B0D21 /* [CP] Check Pods Manifest.lock */,
+				952A527C204DB475001DF2BB /* Sources */,
+				952A527D204DB475001DF2BB /* Frameworks */,
+				952A527E204DB475001DF2BB /* Resources */,
+				69E70F13DAC78F621054334E /* [CP] Embed Pods Frameworks */,
+				B773836299C9D858058A23C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952A5282204DB475001DF2BB /* PBXTargetDependency */,
+			);
+			name = "BigchainDB macOSUITests";
+			productName = "BigchainDB macOSUITests";
+			productReference = 952A5280204DB475001DF2BB /* BigchainDB macOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		952A525B204DB474001DF2BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Saransh Mittal";
+				TargetAttributes = {
+					952A5262204DB474001DF2BB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					952A5274204DB475001DF2BB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 952A5262204DB474001DF2BB;
+					};
+					952A527F204DB475001DF2BB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 952A5262204DB474001DF2BB;
+					};
+				};
+			};
+			buildConfigurationList = 952A525E204DB474001DF2BB /* Build configuration list for PBXProject "BigchainDB macOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 952A525A204DB474001DF2BB;
+			productRefGroup = 952A5264204DB474001DF2BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				952A5262204DB474001DF2BB /* BigchainDB macOS */,
+				952A5274204DB475001DF2BB /* BigchainDB macOSTests */,
+				952A527F204DB475001DF2BB /* BigchainDB macOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952A5261204DB474001DF2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952A526B204DB474001DF2BB /* Assets.xcassets in Resources */,
+				952A526E204DB474001DF2BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A5273204DB475001DF2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A527E204DB475001DF2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		074EA862133E8721F12BF2A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigchainDB macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A64D97844FD51A2D80CC641 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOS/Pods-BigchainDB macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A19594D707E6565EE6A5C02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOS/Pods-BigchainDB macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftWebSocket/SwiftWebSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOS/Pods-BigchainDB macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69E70F13DAC78F621054334E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOSUITests/Pods-BigchainDB macOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81AE1A50909119317EB9DE76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOSTests/Pods-BigchainDB macOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90244ED7E1275D401C34453D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigchainDB macOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CB4FFE37D097EF237B0D21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigchainDB macOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B773836299C9D858058A23C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOSUITests/Pods-BigchainDB macOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED317BA831B54CDA682DB0FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigchainDB macOSTests/Pods-BigchainDB macOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		952A525F204DB474001DF2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952A5269204DB474001DF2BB /* ViewController.swift in Sources */,
+				952A5267204DB474001DF2BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A5271204DB475001DF2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952A527A204DB475001DF2BB /* BigchainDB_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952A527C204DB475001DF2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952A5285204DB475001DF2BB /* BigchainDB_macOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		952A5277204DB475001DF2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952A5262204DB474001DF2BB /* BigchainDB macOS */;
+			targetProxy = 952A5276204DB475001DF2BB /* PBXContainerItemProxy */;
+		};
+		952A5282204DB475001DF2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952A5262204DB474001DF2BB /* BigchainDB macOS */;
+			targetProxy = 952A5281204DB475001DF2BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		952A526C204DB474001DF2BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				952A526D204DB474001DF2BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		952A5287204DB475001DF2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		952A5288204DB475001DF2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		952A528A204DB475001DF2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5732C39094985D18B7356DFC /* Pods-BigchainDB macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BigchainDB macOS/BigchainDB_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BigchainDB macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "skyblue.BigchainDB-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		952A528B204DB475001DF2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F287A1955832A4E210749D9 /* Pods-BigchainDB macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BigchainDB macOS/BigchainDB_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BigchainDB macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "skyblue.BigchainDB-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		952A528D204DB475001DF2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C4B987E576C659C0E26764 /* Pods-BigchainDB macOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BigchainDB macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "skyblue.BigchainDB-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigchainDB macOS.app/Contents/MacOS/BigchainDB macOS";
+			};
+			name = Debug;
+		};
+		952A528E204DB475001DF2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0D3B1434A962BDE1E0862C /* Pods-BigchainDB macOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BigchainDB macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "skyblue.BigchainDB-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigchainDB macOS.app/Contents/MacOS/BigchainDB macOS";
+			};
+			name = Release;
+		};
+		952A5290204DB475001DF2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55014243DCC9CB2A8778332D /* Pods-BigchainDB macOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BigchainDB macOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "skyblue.BigchainDB-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "BigchainDB macOS";
+			};
+			name = Debug;
+		};
+		952A5291204DB475001DF2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2270642937B1CEC55F7AB83B /* Pods-BigchainDB macOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "BigchainDB macOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "skyblue.BigchainDB-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "BigchainDB macOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		952A525E204DB474001DF2BB /* Build configuration list for PBXProject "BigchainDB macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952A5287204DB475001DF2BB /* Debug */,
+				952A5288204DB475001DF2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952A5289204DB475001DF2BB /* Build configuration list for PBXNativeTarget "BigchainDB macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952A528A204DB475001DF2BB /* Debug */,
+				952A528B204DB475001DF2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952A528C204DB475001DF2BB /* Build configuration list for PBXNativeTarget "BigchainDB macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952A528D204DB475001DF2BB /* Debug */,
+				952A528E204DB475001DF2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952A528F204DB475001DF2BB /* Build configuration list for PBXNativeTarget "BigchainDB macOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952A5290204DB475001DF2BB /* Debug */,
+				952A5291204DB475001DF2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 952A525B204DB474001DF2BB /* Project object */;
+}
