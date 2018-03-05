@@ -44,6 +44,7 @@ function createPaint() {
     );
     // The owner of the painting signs the transaction
     const txSigned = BigchainDB.Transaction.signTransaction(txCreatePaint, alice.privateKey);
+    console.log(txSigned);
     // Send the transaction off to BigchainDB
     conn.postTransaction(txSigned)
     // Check the status of the transaction
