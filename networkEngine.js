@@ -9,7 +9,7 @@ axios.get('https://test.bigchaindb.com/api/v1/')
     });
 
 // get all the information about a transaction using the Asset ID
-axios.get('https://test.bigchaindb.com/api/v1/transactions/418b8fe96b5296584f9a60d0005d6b18dd4aab92c4b45c4d13bb0d5ca38beaf9')
+axios.get('https://test.bigchaindb.com/api/v1/transactions/2a2543ca997c214c1b1edeb5e302f15259e734af4c47166e519ea0359d3310d4')
     .then(response => {
         console.log(response.data);
     })

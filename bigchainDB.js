@@ -2,7 +2,9 @@ const BigchainDB = require('bigchaindb-driver');
 const bip39 = require('bip39');
 
 
-const API_PATH = 'https://test.bigchaindb.com/api/v1/';
+const API_PATH = 'http://localhost:59984/api/v1/';
+// https://test.bigchaindb.com/api/v1/
+// http://localhost:59984/api/v1/
 const conn = new BigchainDB.Connection(API_PATH, {
     app_id: 'f0c5a7ce',
     app_key: 'f97a09137b19d4693554d24efb7dbd43'
@@ -41,9 +43,7 @@ function createPaint() {
     // Construct a transaction payload
     const txCreatePaint = BigchainDB.Transaction.makeCreateTransaction(
         // Asset field
-        {
-            painting
-        },
+        {painting},
         // Metadata field, contains information about the transaction itself
         // (can be `null` if not needed)
         {
@@ -61,6 +61,7 @@ function createPaint() {
         // Issuers
         alice.publicKey
     );
+    console.log(txCreatePaint)
     // The owner of the painting signs the transaction
     const txSigned = BigchainDB.Transaction.signTransaction(txCreatePaint, alice.privateKey);
     console.log(txSigned);
