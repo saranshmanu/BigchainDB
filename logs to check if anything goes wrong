@@ -1,0 +1,2036 @@
+The authenticity of host '139.59.12.96 (139.59.12.96)' can't be established.
+ECDSA key fingerprint is SHA256:CBGZjoFDfU3pu1vmRREKjfV91yMInpq1cd1Xm6PnpC8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '139.59.12.96' (ECDSA) to the list of known hosts.
+root@139.59.12.96's password:
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-109-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+89 packages can be updated.
+44 updates are security updates.
+
+
+-------------------------------------------------------------------------------
+Thank you for using DigitalOcean's Docker Application.
+
+Docker has been preinstalled and configured per Docker's Recommendations.
+
+"ufw" has been enabled. All ports except 22 (SSH), 80 (http) and 443 (https)
+have been blocked by default.
+
+'docker-compose' has been installed to /usr/local/bin/docker-compose
+
+-------------------------------------------------------------------------------
+
+You can learn more about using this image here: http://do.co/docker
+
+-------------------------------------------------------------------------------
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      14315/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42903    14337/docker-contai @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufs
+No command 'ufs' found, did you mean:
+ Command 'zfs' from package 'zfsutils-linux' (universe)
+ Command 'zfs' from package 'zfs-fuse' (universe)
+ Command 'ufw' from package 'ufw' (main)
+ Command 'hfs' from package 'hfsutils-tcltk' (universe)
+ Command 'fs' from package 'openafs-client' (universe)
+ufs: command not found
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw
+ERROR: not enough args
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw allow 59985/tcp
+WARN: / is group writable!
+Rule added
+Rule added (v6)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw allow 59984/tcp
+WARN: / is group writable!
+Rule added
+Rule added (v6)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      14315/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42903    14337/docker-contai @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ping localhost:27017
+ping: unknown host localhost:27017
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ping 127.0.0.1:27017
+ping: unknown host 127.0.0.1:27017
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ping 127.0.0.1
+PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.084 ms
+64 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.109 ms
+64 bytes from 127.0.0.1: icmp_seq=3 ttl=64 time=0.079 ms
+64 bytes from 127.0.0.1: icmp_seq=4 ttl=64 time=0.083 ms
+^C
+--- 127.0.0.1 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 2999ms
+rtt min/avg/max/mdev = 0.079/0.088/0.109/0.016 ms
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# nmap 127.0.0.1
+The program 'nmap' is currently not installed. You can install it by typing:
+apt install nmap
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# apt install nmap
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libblas-common libblas3 liblinear3 liblua5.2-0 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib libxslt1.1 lua-lpeg ndiff python python-bs4 python-chardet python-html5lib python-lxml
+  python-minimal python-pkg-resources python-six python2.7 python2.7-minimal
+Suggested packages:
+  liblinear-tools liblinear-dev python-doc python-tk python-genshi python-lxml-dbg python-lxml-doc python-setuptools python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  libblas-common libblas3 liblinear3 liblua5.2-0 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib libxslt1.1 lua-lpeg ndiff nmap python python-bs4 python-chardet python-html5lib python-lxml
+  python-minimal python-pkg-resources python-six python2.7 python2.7-minimal
+0 upgraded, 21 newly installed, 0 to remove and 85 not upgraded.
+Need to get 10.2 MB of archives.
+After this operation, 44.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubuntu0~16.04.3 [340 kB]
+Get:2 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~16.04.3 [1261 kB]
+Get:3 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 python-minimal amd64 2.7.12-1~16.04 [28.1 kB]
+Get:4 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu0~16.04.3 [1880 kB]
+Get:5 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.3 [224 kB]
+Get:6 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libpython-stdlib amd64 2.7.12-1~16.04 [7768 B]
+Get:7 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 python amd64 2.7.12-1~16.04 [137 kB]
+Get:8 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 libblas-common amd64 3.6.0-2ubuntu2 [5342 B]
+Get:9 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 libblas3 amd64 3.6.0-2ubuntu2 [147 kB]
+Get:10 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 liblinear3 amd64 2.1.0+dfsg-1 [39.3 kB]
+Get:11 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 liblua5.2-0 amd64 5.2.4-1ubuntu1 [106 kB]
+Get:12 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libxslt1.1 amd64 1.1.28-2.1ubuntu0.1 [145 kB]
+Get:13 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 lua-lpeg amd64 0.12.2-1 [28.3 kB]
+Get:14 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 python-bs4 all 4.4.1-1 [64.2 kB]
+Get:15 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 python-pkg-resources all 20.7.0-1 [108 kB]
+Get:16 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 python-chardet all 2.3.0-2 [96.3 kB]
+Get:17 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 python-six all 1.10.0-3 [10.9 kB]
+Get:18 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 python-html5lib all 0.999-4 [83.1 kB]
+Get:19 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 python-lxml amd64 3.5.0-1build1 [819 kB]
+Get:20 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 ndiff all 7.01-2ubuntu2 [20.1 kB]
+Get:21 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 nmap amd64 7.01-2ubuntu2 [4638 kB]
+Fetched 10.2 MB in 1s (5528 kB/s)
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 60488 files and directories currently installed.)
+Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking python2.7 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.3) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package python.
+(Reading database ... 61234 files and directories currently installed.)
+Preparing to unpack .../python_2.7.12-1~16.04_amd64.deb ...
+Unpacking python (2.7.12-1~16.04) ...
+Selecting previously unselected package libblas-common.
+Preparing to unpack .../libblas-common_3.6.0-2ubuntu2_amd64.deb ...
+Unpacking libblas-common (3.6.0-2ubuntu2) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../libblas3_3.6.0-2ubuntu2_amd64.deb ...
+Unpacking libblas3 (3.6.0-2ubuntu2) ...
+Selecting previously unselected package liblinear3:amd64.
+Preparing to unpack .../liblinear3_2.1.0+dfsg-1_amd64.deb ...
+Unpacking liblinear3:amd64 (2.1.0+dfsg-1) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../liblua5.2-0_5.2.4-1ubuntu1_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1ubuntu1) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../libxslt1.1_1.1.28-2.1ubuntu0.1_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.28-2.1ubuntu0.1) ...
+Selecting previously unselected package lua-lpeg:amd64.
+Preparing to unpack .../lua-lpeg_0.12.2-1_amd64.deb ...
+Unpacking lua-lpeg:amd64 (0.12.2-1) ...
+Selecting previously unselected package python-bs4.
+Preparing to unpack .../python-bs4_4.4.1-1_all.deb ...
+Unpacking python-bs4 (4.4.1-1) ...
+Selecting previously unselected package python-pkg-resources.
+Preparing to unpack .../python-pkg-resources_20.7.0-1_all.deb ...
+Unpacking python-pkg-resources (20.7.0-1) ...
+Selecting previously unselected package python-chardet.
+Preparing to unpack .../python-chardet_2.3.0-2_all.deb ...
+Unpacking python-chardet (2.3.0-2) ...
+Selecting previously unselected package python-six.
+Preparing to unpack .../python-six_1.10.0-3_all.deb ...
+Unpacking python-six (1.10.0-3) ...
+Selecting previously unselected package python-html5lib.
+Preparing to unpack .../python-html5lib_0.999-4_all.deb ...
+Unpacking python-html5lib (0.999-4) ...
+Selecting previously unselected package python-lxml.
+Preparing to unpack .../python-lxml_3.5.0-1build1_amd64.deb ...
+Unpacking python-lxml (3.5.0-1build1) ...
+Selecting previously unselected package ndiff.
+Preparing to unpack .../ndiff_7.01-2ubuntu2_all.deb ...
+Unpacking ndiff (7.01-2ubuntu2) ...
+Selecting previously unselected package nmap.
+Preparing to unpack .../nmap_7.01-2ubuntu2_amd64.deb ...
+Unpacking nmap (7.01-2ubuntu2) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python2.7 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Setting up python (2.7.12-1~16.04) ...
+Setting up libblas-common (3.6.0-2ubuntu2) ...
+Setting up libblas3 (3.6.0-2ubuntu2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+Setting up liblinear3:amd64 (2.1.0+dfsg-1) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1ubuntu1) ...
+Setting up libxslt1.1:amd64 (1.1.28-2.1ubuntu0.1) ...
+Setting up lua-lpeg:amd64 (0.12.2-1) ...
+Setting up python-bs4 (4.4.1-1) ...
+Setting up python-pkg-resources (20.7.0-1) ...
+Setting up python-chardet (2.3.0-2) ...
+Setting up python-six (1.10.0-3) ...
+Setting up python-html5lib (0.999-4) ...
+Setting up python-lxml (3.5.0-1build1) ...
+Setting up ndiff (7.01-2ubuntu2) ...
+Setting up nmap (7.01-2ubuntu2) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# nmap 127.0.0.1:59984
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-03-07 19:26 UTC
+Failed to resolve "127.0.0.1:59984".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.08 seconds
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# nmap 127.0.0.1
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-03-07 19:26 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000013s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 1.63 seconds
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# nmap localhost
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-03-07 19:27 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000014s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 1.62 seconds
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# nmap 139.59.12.96
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2018-03-07 19:27 UTC
+Nmap scan report for 139.59.12.96
+Host is up (0.0000080s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 1.65 seconds
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw allow 9984
+WARN: / is group writable!
+Rule added
+Rule added (v6)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw --help
+
+Usage: ufw COMMAND
+
+Commands:
+ enable                          enables the firewall
+ disable                         disables the firewall
+ default ARG                     set default policy
+ logging LEVEL                   set logging to LEVEL
+ allow ARGS                      add allow rule
+ deny ARGS                       add deny rule
+ reject ARGS                     add reject rule
+ limit ARGS                      add limit rule
+ delete RULE|NUM                 delete RULE
+ insert NUM RULE                 insert RULE at NUM
+ route RULE                      add route RULE
+ route delete RULE|NUM           delete route RULE
+ route insert NUM RULE           insert route RULE at NUM
+ reload                          reload firewall
+ reset                           reset firewall
+ status                          show firewall status
+ status numbered                 show firewall status as numbered list of RULES
+ status verbose                  show verbose firewall status
+ show ARG                        show firewall report
+ version                         display version information
+
+Application profile commands:
+ app list                        list application profiles
+ app info PROFILE                show information on PROFILE
+ app update PROFILE              update PROFILE
+ app default ARG                 set default application policy
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw status
+WARN: / is group writable!
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22                         LIMIT       Anywhere
+2375/tcp                   ALLOW       Anywhere
+2376/tcp                   ALLOW       Anywhere
+59985/tcp                  ALLOW       Anywhere
+59984/tcp                  ALLOW       Anywhere
+9984                       ALLOW       Anywhere
+22 (v6)                    LIMIT       Anywhere (v6)
+2375/tcp (v6)              ALLOW       Anywhere (v6)
+2376/tcp (v6)              ALLOW       Anywhere (v6)
+59985/tcp (v6)             ALLOW       Anywhere (v6)
+59984/tcp (v6)             ALLOW       Anywhere (v6)
+9984 (v6)                  ALLOW       Anywhere (v6)
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw reset
+WARN: / is group writable!
+Resetting all rules to installed defaults. This may disrupt existing ssh
+connections. Proceed with operation (y|n)? y
+Backing up 'user6.rules' to '/etc/ufw/user6.rules.20180307_192924'
+Backing up 'after6.rules' to '/etc/ufw/after6.rules.20180307_192924'
+Backing up 'after.rules' to '/etc/ufw/after.rules.20180307_192924'
+Backing up 'before.rules' to '/etc/ufw/before.rules.20180307_192924'
+Backing up 'before6.rules' to '/etc/ufw/before6.rules.20180307_192924'
+Backing up 'user.rules' to '/etc/ufw/user.rules.20180307_192924'
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw status
+WARN: / is group writable!
+Status: inactive
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl 127.0.0.1:9984
+curl: (7) Failed to connect to 127.0.0.1 port 9984: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl 127.0.0.1:59984
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl https://127.0.0.1:59984
+curl: (35) gnutls_handshake() failed: The TLS connection was non-properly terminated.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl https://127.0.0.1:59984/
+curl: (35) gnutls_handshake() failed: The TLS connection was non-properly terminated.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl 127.0.0.1:59984/
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~#
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl localhost
+curl: (7) Failed to connect to localhost port 80: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl localhost:27017
+It looks like you are trying to access MongoDB over HTTP on the native driver port.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl localhost:59984
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl localhost:59984/api/v1/
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# grep -i tcp
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -an
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN
+tcp        0      0 139.59.12.96:22         119.249.54.217:41478    ESTABLISHED
+tcp        0      0 139.59.12.96:22         110.224.21.36:25662     ESTABLISHED
+tcp        0    316 139.59.12.96:22         110.224.21.36:45029     ESTABLISHED
+tcp6       0      0 :::27017                :::*                    LISTEN
+tcp6       0      0 :::59984                :::*                    LISTEN
+tcp6       0      0 :::22                   :::*                    LISTEN
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42903    @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  3      [ ]         DGRAM                    9838     /run/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     9839     /run/systemd/private
+unix  2      [ ]         DGRAM                    9853     /run/systemd/journal/syslog
+unix  9      [ ]         DGRAM                    9877     /run/systemd/journal/dev-log
+unix  2      [ ACC ]     STREAM     LISTENING     9882     /run/systemd/journal/stdout
+unix  7      [ ]         DGRAM                    9883     /run/systemd/journal/socket
+unix  2      [ ACC ]     STREAM     LISTENING     10386    /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+unix  3      [ ]         DGRAM                    11380
+unix  3      [ ]         STREAM     CONNECTED     17520
+unix  3      [ ]         STREAM     CONNECTED     10755    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    15993
+unix  3      [ ]         STREAM     CONNECTED     17521    /var/run/docker/containerd/docker-containerd.sock
+unix  3      [ ]         STREAM     CONNECTED     10754
+unix  3      [ ]         STREAM     CONNECTED     16183    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16141
+unix  3      [ ]         STREAM     CONNECTED     17510
+unix  2      [ ]         DGRAM                    33386
+unix  3      [ ]         STREAM     CONNECTED     17476    /var/run/docker/containerd/docker-containerd.sock
+unix  3      [ ]         STREAM     CONNECTED     16182    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16601
+unix  3      [ ]         STREAM     CONNECTED     16140
+unix  3      [ ]         STREAM     CONNECTED     17511    /var/run/docker/containerd/docker-containerd.sock
+unix  3      [ ]         DGRAM                    13269
+unix  3      [ ]         STREAM     CONNECTED     16180
+unix  3      [ ]         STREAM     CONNECTED     16181
+unix  2      [ ]         DGRAM                    16176
+unix  3      [ ]         STREAM     CONNECTED     15783
+unix  3      [ ]         STREAM     CONNECTED     17431    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17416    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    14951
+unix  3      [ ]         STREAM     CONNECTED     17434    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16138
+unix  3      [ ]         STREAM     CONNECTED     15987
+unix  2      [ ]         DGRAM                    14953
+unix  2      [ ]         DGRAM                    47927
+unix  3      [ ]         STREAM     CONNECTED     33368
+unix  3      [ ]         STREAM     CONNECTED     18326    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     52146
+unix  3      [ ]         STREAM     CONNECTED     18325
+unix  3      [ ]         STREAM     CONNECTED     17470
+unix  3      [ ]         STREAM     CONNECTED     17408    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15701
+unix  3      [ ]         STREAM     CONNECTED     52145
+unix  2      [ ]         DGRAM                    15229
+unix  3      [ ]         DGRAM                    13272
+unix  2      [ ]         DGRAM                    11372
+unix  2      [ ]         DGRAM                    13255
+unix  2      [ ]         DGRAM                    33166
+unix  3      [ ]         STREAM     CONNECTED     33369    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17383    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15096
+unix  3      [ ]         STREAM     CONNECTED     16169
+unix  2      [ ]         DGRAM                    37388
+unix  3      [ ]         STREAM     CONNECTED     16184    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    10398
+unix  3      [ ]         DGRAM                    11381
+unix  3      [ ]         STREAM     CONNECTED     42910    @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  2      [ ]         DGRAM                    17238
+unix  3      [ ]         STREAM     CONNECTED     13211    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16251
+unix  3      [ ]         STREAM     CONNECTED     15297
+unix  3      [ ]         STREAM     CONNECTED     42339
+unix  3      [ ]         STREAM     CONNECTED     17435    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    13270
+unix  3      [ ]         STREAM     CONNECTED     13204
+unix  3      [ ]         STREAM     CONNECTED     11357
+unix  3      [ ]         DGRAM                    13271
+unix  3      [ ]         STREAM     CONNECTED     11358    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42344    @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  3      [ ]         STREAM     CONNECTED     16602    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17397    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42907
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ls
+bigchaindb_docker  mongodb_docker
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -an
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN
+tcp        0      0 139.59.12.96:22         110.224.21.36:25662     ESTABLISHED
+tcp        0      0 139.59.12.96:22         110.224.21.36:45029     ESTABLISHED
+tcp6       0      0 :::27017                :::*                    LISTEN
+tcp6       0      0 :::59984                :::*                    LISTEN
+tcp6       0      0 :::22                   :::*                    LISTEN
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42903    @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  3      [ ]         DGRAM                    9838     /run/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     9839     /run/systemd/private
+unix  2      [ ]         DGRAM                    9853     /run/systemd/journal/syslog
+unix  9      [ ]         DGRAM                    9877     /run/systemd/journal/dev-log
+unix  2      [ ACC ]     STREAM     LISTENING     9882     /run/systemd/journal/stdout
+unix  7      [ ]         DGRAM                    9883     /run/systemd/journal/socket
+unix  2      [ ACC ]     STREAM     LISTENING     10386    /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+unix  3      [ ]         DGRAM                    11380
+unix  3      [ ]         STREAM     CONNECTED     17520
+unix  3      [ ]         STREAM     CONNECTED     10755    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    15993
+unix  3      [ ]         STREAM     CONNECTED     17521    /var/run/docker/containerd/docker-containerd.sock
+unix  3      [ ]         STREAM     CONNECTED     10754
+unix  3      [ ]         STREAM     CONNECTED     16183    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16141
+unix  3      [ ]         STREAM     CONNECTED     17510
+unix  2      [ ]         DGRAM                    33386
+unix  3      [ ]         STREAM     CONNECTED     17476    /var/run/docker/containerd/docker-containerd.sock
+unix  3      [ ]         STREAM     CONNECTED     16182    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16601
+unix  3      [ ]         STREAM     CONNECTED     16140
+unix  3      [ ]         STREAM     CONNECTED     17511    /var/run/docker/containerd/docker-containerd.sock
+unix  3      [ ]         DGRAM                    13269
+unix  3      [ ]         STREAM     CONNECTED     16180
+unix  3      [ ]         STREAM     CONNECTED     16181
+unix  2      [ ]         DGRAM                    16176
+unix  3      [ ]         STREAM     CONNECTED     15783
+unix  3      [ ]         STREAM     CONNECTED     17431    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17416    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    14951
+unix  3      [ ]         STREAM     CONNECTED     17434    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16138
+unix  3      [ ]         STREAM     CONNECTED     15987
+unix  2      [ ]         DGRAM                    14953
+unix  2      [ ]         DGRAM                    47927
+unix  3      [ ]         STREAM     CONNECTED     33368
+unix  3      [ ]         STREAM     CONNECTED     18326    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     18325
+unix  3      [ ]         STREAM     CONNECTED     17470
+unix  3      [ ]         STREAM     CONNECTED     17408    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15701
+unix  2      [ ]         DGRAM                    15229
+unix  3      [ ]         DGRAM                    13272
+unix  2      [ ]         DGRAM                    11372
+unix  2      [ ]         DGRAM                    13255
+unix  2      [ ]         DGRAM                    33166
+unix  3      [ ]         STREAM     CONNECTED     33369    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17383    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15096
+unix  3      [ ]         STREAM     CONNECTED     16169
+unix  2      [ ]         DGRAM                    37388
+unix  3      [ ]         STREAM     CONNECTED     16184    /var/run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    10398
+unix  3      [ ]         DGRAM                    11381
+unix  3      [ ]         STREAM     CONNECTED     42910    @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  2      [ ]         DGRAM                    17238
+unix  3      [ ]         STREAM     CONNECTED     13211    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16251
+unix  3      [ ]         STREAM     CONNECTED     15297
+unix  3      [ ]         STREAM     CONNECTED     42339
+unix  3      [ ]         STREAM     CONNECTED     17435    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    13270
+unix  3      [ ]         STREAM     CONNECTED     13204
+unix  3      [ ]         STREAM     CONNECTED     11357
+unix  3      [ ]         DGRAM                    13271
+unix  3      [ ]         STREAM     CONNECTED     11358    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42344    @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  3      [ ]         STREAM     CONNECTED     16602    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17397    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     42907
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      14315/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42903    14337/docker-contai @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# isof-i :59984
+isof-i: command not found
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# isof
+No command 'isof' found, did you mean:
+ Command 'iso' from package 'fonty-rg' (universe)
+ Command 'isol' from package 'ipmiutil' (universe)
+ Command 'lsof' from package 'lsof' (main)
+isof: command not found
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# isof -i :59984
+No command 'isof' found, did you mean:
+ Command 'lsof' from package 'lsof' (main)
+ Command 'iso' from package 'fonty-rg' (universe)
+ Command 'isol' from package 'ipmiutil' (universe)
+isof: command not found
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# uwf allow 59984/tcp
+No command 'uwf' found, did you mean:
+ Command 'ufw' from package 'ufw' (main)
+ Command 'uif' from package 'uif' (universe)
+ Command 'ucf' from package 'ucf' (main)
+uwf: command not found
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ufw allow 59984/tcp
+WARN: / is group writable!
+Rules updated
+Rules updated (v6)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      14315/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42903    14337/docker-contai @/containerd-shim/moby/69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://localhost:59984
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:59984
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:59985
+curl: (7) Failed to connect to localhost port 59985: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:59984
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:9984
+curl: (7) Failed to connect to localhost port 9984: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:59984
+curl: (52) Empty reply from server
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker service ls
+Error response from daemon: This node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker service ps
+"docker service ps" requires at least 1 argument.
+See 'docker service ps --help'.
+
+Usage:  docker service ps [OPTIONS] SERVICE [SERVICE...] [flags]
+
+List the tasks of one or more services
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker service ps redis
+Error response from daemon: This node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker service ps bigchaindb
+Error response from daemon: This node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker service ps 14315
+Error response from daemon: This node is not a swarm manager. Use "docker swarm init" or "docker swarm join" to connect this node to swarm and try again.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker-compose ps -q service-name
+ERROR:
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker-compose
+Define and run multi-container applications with Docker.
+
+Usage:
+  docker-compose [-f <arg>...] [options] [COMMAND] [ARGS...]
+  docker-compose -h|--help
+
+Options:
+  -f, --file FILE             Specify an alternate compose file (default: docker-compose.yml)
+  -p, --project-name NAME     Specify an alternate project name (default: directory name)
+  --verbose                   Show more output
+  --no-ansi                   Do not print ANSI control characters
+  -v, --version               Print version and exit
+  -H, --host HOST             Daemon socket to connect to
+
+  --tls                       Use TLS; implied by --tlsverify
+  --tlscacert CA_PATH         Trust certs signed only by this CA
+  --tlscert CLIENT_CERT_PATH  Path to TLS certificate file
+  --tlskey TLS_KEY_PATH       Path to TLS key file
+  --tlsverify                 Use TLS and verify the remote
+  --skip-hostname-check       Don't check the daemon's hostname against the name specified
+                              in the client certificate (for example if your docker host
+                              is an IP address)
+  --project-directory PATH    Specify an alternate working directory
+                              (default: the path of the Compose file)
+
+Commands:
+  build              Build or rebuild services
+  bundle             Generate a Docker bundle from the Compose file
+  config             Validate and view the Compose file
+  create             Create services
+  down               Stop and remove containers, networks, images, and volumes
+  events             Receive real time events from containers
+  exec               Execute a command in a running container
+  help               Get help on a command
+  images             List images
+  kill               Kill containers
+  logs               View output from containers
+  pause              Pause services
+  port               Print the public port for a port binding
+  ps                 List containers
+  pull               Pull service images
+  push               Push service images
+  restart            Restart services
+  rm                 Remove stopped containers
+  run                Run a one-off command
+  scale              Set number of containers for a service
+  start              Start services
+  stop               Stop services
+  top                Display the running processes
+  unpause            Unpause services
+  up                 Create and start containers
+  version            Show the Docker-Compose version information
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker-compose logs
+ERROR:
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker
+
+Usage:	docker COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images (experimental)
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs
+"docker logs" requires exactly 1 argument.
+See 'docker logs --help'.
+
+Usage:  docker logs [OPTIONS] CONTAINER [flags]
+
+Fetch the logs of a container
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+69970c9edbd2        bigchaindb          0.07%               41.68MiB / 992.3MiB   4.20%               5.9kB / 5.36kB      10.7MB / 0B         3
+96b5498c5648        mongodb             1.24%               37.98MiB / 992.3MiB   3.83%               5.19MB / 83.1MB     950kB / 4.53MB      30
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+69970c9edbd2        bigchaindb          0.03%               41.68MiB / 992.3MiB   4.20%               5.9kB / 5.36kB      10.7MB / 0B         3
+96b5498c5648        mongodb             1.43%               37.98MiB / 992.3MiB   3.83%               5.54MB / 89.1MB     950kB / 4.75MB      30
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker container stats --helpo
+unknown flag: --helpo
+See 'docker container stats --help'.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker container stats --help
+
+Usage:	docker container stats [OPTIONS] [CONTAINER...]
+
+Display a live stream of container(s) resource usage statistics
+
+Options:
+  -a, --all             Show all containers (default shows just running)
+      --format string   Pretty-print images using a Go template
+      --no-stream       Disable streaming stats and only pull the first result
+      --no-trunc        Do not truncate output
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker container stats -a 69970c9edbd2
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+69970c9edbd2        bigchaindb          0.04%               41.68MiB / 992.3MiB   4.20%               5.9kB / 5.36kB      10.7MB / 0B         3
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+69970c9edbd2        bigchaindb          0.03%               41.68MiB / 992.3MiB   4.20%               5.9kB / 5.36kB      10.7MB / 0B         3
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs 69970c9edbd2
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 18:58:28] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 18:58:28] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 18:58:33] [INFO] (bigchaindb.backend.mongodb.connection) Exception in _connect(): No servers found yet (MainProcess - pid: 1)
+[2018-03-07 18:58:33] [WARNING] (bigchaindb.backend.connection) Attempt 1/3. Connection to 172.17.0.1:27017 failed after 5000ms. (MainProcess - pid: 1)
+[2018-03-07 18:58:38] [INFO] (bigchaindb.backend.mongodb.connection) Exception in _connect(): No servers found yet (MainProcess - pid: 1)
+[2018-03-07 18:58:38] [WARNING] (bigchaindb.backend.connection) Attempt 2/3. Connection to 172.17.0.1:27017 failed after 5000ms. (MainProcess - pid: 1)
+[2018-03-07 18:58:43] [INFO] (bigchaindb.backend.mongodb.connection) Exception in _connect(): No servers found yet (MainProcess - pid: 1)
+[2018-03-07 18:58:43] [WARNING] (bigchaindb.backend.connection) Attempt 3/3. Connection to 172.17.0.1:27017 failed after 5000ms. (MainProcess - pid: 1)
+[2018-03-07 18:58:43] [CRITICAL] (bigchaindb.backend.connection) Cannot connect to the Database. Giving up. (MainProcess - pid: 1)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run \
+>   --detach \
+>   --name=bigchaindb \
+>   --publish=59984:9984 \
+>   --restart=always \
+>   --volume=$HOME/bigchaindb_docker:/data \
+>   bigchaindb/bigchaindb \
+>   start
+docker: Error response from daemon: Conflict. The container name "/bigchaindb" is already in use by container "69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker kill
+"docker kill" requires at least 1 argument.
+See 'docker kill --help'.
+
+Usage:  docker kill [OPTIONS] CONTAINER [CONTAINER...] [flags]
+
+Kill one or more running containers
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stop bigchaindb
+bigchaindb
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run \
+>   --detach \
+>   --name=bigchaindb \
+>   --publish=59984:9984 \
+>   --restart=always \
+>   --volume=$HOME/bigchaindb_docker:/data \
+>   bigchaindb/bigchaindb \
+>   start
+docker: Error response from daemon: Conflict. The container name "/bigchaindb" is already in use by container "69970c9edbd26ecb6f0e1537f21759c3d2acccae4869f990a7faaf973689444b". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker rm 69970c9edbd2
+69970c9edbd2
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs 69970c9edbd2
+Error response from daemon: No such container: 69970c9edbd2
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+96b5498c5648        mongodb             1.25%               37.98MiB / 992.3MiB   3.83%               5.87MB / 94.5MB     950kB / 4.95MB      30
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+96b5498c5648        mongodb             1.35%               37.98MiB / 992.3MiB   3.83%               5.87MB / 94.7MB     950kB / 4.95MB      30
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs 96b5498c5648
+2018-03-07T18:58:09.921+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=96b5498c5648
+2018-03-07T18:58:09.922+0000 I CONTROL  [initandlisten] db version v3.4.9
+2018-03-07T18:58:09.922+0000 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2018-03-07T18:58:09.922+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t  3 May 2016
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten] modules: none
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten] build environment:
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten]     distmod: debian81
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-03-07T18:58:09.923+0000 I CONTROL  [initandlisten] options: { replication: { replSet: "bigchain-rs" } }
+2018-03-07T18:58:09.928+0000 I STORAGE  [initandlisten]
+2018-03-07T18:58:09.928+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-03-07T18:58:09.928+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-03-07T18:58:09.928+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=256M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2018-03-07T18:58:09.995+0000 I CONTROL  [initandlisten]
+2018-03-07T18:58:09.996+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-03-07T18:58:09.996+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-03-07T18:58:09.996+0000 I CONTROL  [initandlisten]
+2018-03-07T18:58:09.996+0000 I CONTROL  [initandlisten]
+2018-03-07T18:58:09.996+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-03-07T18:58:09.997+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-03-07T18:58:09.997+0000 I CONTROL  [initandlisten]
+2018-03-07T18:58:09.997+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2018-03-07T18:58:09.997+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-03-07T18:58:09.997+0000 I CONTROL  [initandlisten]
+2018-03-07T18:58:10.014+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2018-03-07T18:58:10.027+0000 I REPL     [initandlisten] Did not find local voted for document at startup.
+2018-03-07T18:58:10.027+0000 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2018-03-07T18:58:10.028+0000 I NETWORK  [thread1] waiting for connections on port 27017
+2018-03-07T19:00:55.562+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:10272 #1 (1 connection now open)
+2018-03-07T19:00:55.622+0000 I -        [conn1] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2018-03-07T19:00:55.623+0000 I -        [conn1] end connection 110.224.21.36:10272 (1 connection now open)
+2018-03-07T19:11:11.585+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:32153 #2 (1 connection now open)
+2018-03-07T19:11:11.614+0000 I NETWORK  [conn2] received client metadata from 110.224.21.36:32153 conn2: { driver: { name: "nodejs", version: "2.2.21" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v6.1.0, LE, mongodb-core: 2.1.6" }
+2018-03-07T19:11:12.005+0000 I -        [conn2] end connection 110.224.21.36:32153 (1 connection now open)
+2018-03-07T19:11:12.245+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:9222 #3 (1 connection now open)
+2018-03-07T19:11:12.250+0000 I NETWORK  [conn3] received client metadata from 110.224.21.36:9222 conn3: { driver: { name: "nodejs", version: "2.2.21" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v6.1.0, LE, mongodb-core: 2.1.6" }
+2018-03-07T19:11:12.909+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:62265 #4 (2 connections now open)
+2018-03-07T19:11:12.920+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:31928 #5 (3 connections now open)
+2018-03-07T19:11:13.950+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:39442 #6 (4 connections now open)
+2018-03-07T19:11:13.990+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:59789 #7 (5 connections now open)
+2018-03-07T19:12:43.350+0000 I -        [conn4] end connection 110.224.21.36:62265 (5 connections now open)
+2018-03-07T19:14:31.263+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:9512 #8 (5 connections now open)
+2018-03-07T19:14:31.283+0000 I NETWORK  [conn8] received client metadata from 110.224.21.36:9512 conn8: { driver: { name: "nodejs", version: "2.2.21" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v6.1.0, LE, mongodb-core: 2.1.6" }
+2018-03-07T19:14:31.702+0000 I -        [conn8] end connection 110.224.21.36:9512 (5 connections now open)
+2018-03-07T19:14:32.081+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:46837 #9 (5 connections now open)
+2018-03-07T19:14:32.102+0000 I NETWORK  [conn9] received client metadata from 110.224.21.36:46837 conn9: { driver: { name: "nodejs", version: "2.2.21" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "17.2.0" }, platform: "Node.js v6.1.0, LE, mongodb-core: 2.1.6" }
+2018-03-07T19:14:32.905+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:64373 #10 (6 connections now open)
+2018-03-07T19:14:32.912+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:48147 #11 (7 connections now open)
+2018-03-07T19:14:33.708+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:13873 #12 (8 connections now open)
+2018-03-07T19:14:34.890+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:15719 #13 (9 connections now open)
+2018-03-07T19:14:36.406+0000 I -        [conn6] end connection 110.224.21.36:39442 (9 connections now open)
+2018-03-07T19:14:41.681+0000 I -        [conn5] end connection 110.224.21.36:31928 (8 connections now open)
+2018-03-07T19:14:46.305+0000 I -        [conn3] end connection 110.224.21.36:9222 (7 connections now open)
+2018-03-07T19:14:47.951+0000 I -        [conn7] end connection 110.224.21.36:59789 (6 connections now open)
+2018-03-07T19:17:38.371+0000 I -        [conn10] end connection 110.224.21.36:64373 (5 connections now open)
+2018-03-07T19:17:44.407+0000 I -        [conn11] end connection 110.224.21.36:48147 (4 connections now open)
+2018-03-07T19:18:23.727+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:33780 #14 (4 connections now open)
+2018-03-07T19:18:23.735+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:22509 #15 (5 connections now open)
+2018-03-07T19:22:01.676+0000 I NETWORK  [thread1] connection accepted from 5.79.68.210:61176 #16 (6 connections now open)
+2018-03-07T19:22:01.676+0000 I -        [conn16] end connection 5.79.68.210:61176 (6 connections now open)
+2018-03-07T19:29:59.927+0000 I NETWORK  [thread1] connection accepted from 110.224.21.36:28501 #17 (6 connections now open)
+2018-03-07T19:29:59.957+0000 I -        [conn17] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2018-03-07T19:29:59.958+0000 I -        [conn17] end connection 110.224.21.36:28501 (6 connections now open)
+2018-03-07T19:33:08.666+0000 I NETWORK  [thread1] connection accepted from 172.17.0.1:39496 #18 (6 connections now open)
+2018-03-07T19:33:08.667+0000 I -        [conn18] end connection 172.17.0.1:39496 (6 connections now open)
+2018-03-07T19:33:25.465+0000 I NETWORK  [thread1] connection accepted from 5.79.68.210:47584 #19 (6 connections now open)
+2018-03-07T19:33:25.466+0000 I -        [conn19] end connection 5.79.68.210:47584 (6 connections now open)
+2018-03-07T19:40:16.148+0000 I NETWORK  [thread1] connection accepted from 5.79.68.210:50174 #20 (6 connections now open)
+2018-03-07T19:40:16.149+0000 I -        [conn20] end connection 5.79.68.210:50174 (6 connections now open)
+2018-03-07T19:59:15.017+0000 I NETWORK  [thread1] connection accepted from 88.80.191.29:47818 #21 (6 connections now open)
+2018-03-07T19:59:21.186+0000 I -        [conn21] end connection 88.80.191.29:47818 (6 connections now open)
+2018-03-07T20:00:13.811+0000 I NETWORK  [thread1] connection accepted from 139.162.202.208:33154 #22 (6 connections now open)
+2018-03-07T20:00:19.960+0000 I -        [conn22] end connection 139.162.202.208:33154 (6 connections now open)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run \
+>   --detach \
+>   --name=bigchaindb \
+>   --publish=59984:9984 \
+>   --restart=always \
+>   --volume=$HOME/bigchaindb_docker:/data \
+>   bigchaindb/bigchaindb \
+>   start
+bc274c19ec50d2ae88d8dfbbf36e5b3201b169f23dfc3cdb420fc8e9a0e864de
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bc274c19ec50        bigchaindb          0.05%               156.3MiB / 992.3MiB   15.75%              64.1kB / 41.7kB     795kB / 0B          35
+96b5498c5648        mongodb             1.25%               68.8MiB / 992.3MiB    6.93%               6.01MB / 96.3MB     1.53MB / 5.45MB     83
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bc274c19ec50        bigchaindb          0.75%               156.4MiB / 992.3MiB   15.76%              71.8kB / 46.2kB     795kB / 0B          35
+96b5498c5648        mongodb             1.84%               67.17MiB / 992.3MiB   6.77%               6.03MB / 96.6MB     1.53MB / 5.45MB     83
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      16087/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     56102    16107/docker-contai @/containerd-shim/moby/bc274c19ec50d2ae88d8dfbbf36e5b3201b169f23dfc3cdb420fc8e9a0e864de/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:9984
+curl: (7) Failed to connect to 0.0.0.0 port 9984: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:9985
+curl: (7) Failed to connect to 0.0.0.0 port 9985: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:99
+curl: (7) Failed to connect to 0.0.0.0 port 99: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:59984
+{
+  "api": {
+    "v1": {
+      "assets": "/api/v1/assets/",
+      "docs": "https://docs.bigchaindb.com/projects/server/en/v1.3.0/http-client-server-api.html",
+      "outputs": "/api/v1/outputs/",
+      "statuses": "/api/v1/statuses/",
+      "streams": "ws://0.0.0.0:9985/api/v1/streams/valid_transactions",
+      "transactions": "/api/v1/transactions/"
+    }
+  },
+  "docs": "https://docs.bigchaindb.com/projects/server/en/v1.3.0/",
+  "keyring": [],
+  "public_key": "8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q",
+  "software": "BigchainDB",
+  "version": "1.3.0"
+}
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 65)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-3  - pid: 16)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.block) Write new block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-8  - pid: 37)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-6  - pid: 21)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-10 - pid: 39)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-16 - pid: 49)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 64)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 65)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-3  - pid: 16)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.block) Write new block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-8  - pid: 37)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-6  - pid: 21)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-10 - pid: 39)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-16 - pid: 49)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 64)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 65)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-3  - pid: 16)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.block) Write new block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-8  - pid: 37)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-6  - pid: 21)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-10 - pid: 39)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-16 - pid: 49)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 64)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 65)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-3  - pid: 16)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.block) Write new block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-8  - pid: 37)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-6  - pid: 21)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-10 - pid: 39)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-16 - pid: 49)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 64)
+[2018-03-07 20:26:28] [INFO] (bigchaindb.pipelines.block) Write new block 2a61d3c27449d6b81af3990223ad76934db132b6029372a86939b8bc767d473f with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:26:28] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block 2a61d3c27449d6b81af3990223ad76934db132b6029372a86939b8bc767d473f (Process-12 - pid: 43)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:59984
+{
+  "api": {
+    "v1": {
+      "assets": "/api/v1/assets/",
+      "docs": "https://docs.bigchaindb.com/projects/server/en/v1.3.0/http-client-server-api.html",
+      "outputs": "/api/v1/outputs/",
+      "statuses": "/api/v1/statuses/",
+      "streams": "ws://0.0.0.0:9985/api/v1/streams/valid_transactions",
+      "transactions": "/api/v1/transactions/"
+    }
+  },
+  "docs": "https://docs.bigchaindb.com/projects/server/en/v1.3.0/",
+  "keyring": [],
+  "public_key": "8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q",
+  "software": "BigchainDB",
+  "version": "1.3.0"
+}
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:59985
+curl: (7) Failed to connect to 0.0.0.0 port 59985: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# curl http://0.0.0.0:9984
+curl: (7) Failed to connect to 0.0.0.0 port 9984: Connection refused
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker curl http://0.0.0.0:9984
+docker: 'curl' is not a docker command.
+See 'docker --help'
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run curl http://0.0.0.0:9984
+Unable to find image 'curl:latest' locally
+docker: Error response from daemon: pull access denied for curl, repository does not exist or may require 'docker login'.
+See 'docker run --help'.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# ^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      16087/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     56102    16107/docker-contai @/containerd-shim/moby/bc274c19ec50d2ae88d8dfbbf36e5b3201b169f23dfc3cdb420fc8e9a0e864de/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker port test
+Error: No such container: test
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bc274c19ec50        bigchaindb          0.21%               211.7MiB / 992.3MiB   21.33%              1.5MB / 857kB       823kB / 0B          66
+96b5498c5648        mongodb             1.29%               80.65MiB / 992.3MiB   8.13%               7.37MB / 107MB      1.54MB / 10.1MB     99
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bc274c19ec50        bigchaindb          1.07%               211.7MiB / 992.3MiB   21.33%              1.51MB / 862kB      823kB / 0B          66
+96b5498c5648        mongodb             1.38%               80.64MiB / 992.3MiB   8.13%               7.38MB / 107MB      1.54MB / 10.2MB     99
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker port bc274c19ec50
+9984/tcp -> 0.0.0.0:59984
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs docker commit
+"docker logs" requires exactly 1 argument.
+See 'docker logs --help'.
+
+Usage:  docker logs [OPTIONS] CONTAINER [flags]
+
+Fetch the logs of a container
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logsbc274c19ec50
+docker: 'logsbc274c19ec50' is not a docker command.
+See 'docker --help'
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:15:49] [INFO] (bigchaindb.backend.mongodb.connection) Waiting for mongodb replica set initialization (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Initialized replica set (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create database `bigchain`. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` table. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `bigchain` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `backlog` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `votes` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `assets` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.schema) Create `metadata` secondary index. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Genesis block created. (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:50] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (58) (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 58)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:15:51] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:15:56] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 65)
+[2018-03-07 20:20:45] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-3  - pid: 16)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.block) Write new block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-5  - pid: 20)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-8  - pid: 37)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-6  - pid: 21)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-10 - pid: 39)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block c3165703e9b11581b768e3edacb01730f45ca4d3ea7385b6f9e9c596e991b009 (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-12 - pid: 43)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-16 - pid: 49)
+[2018-03-07 20:20:46] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (webapi     - pid: 64)
+[2018-03-07 20:26:28] [INFO] (bigchaindb.pipelines.block) Write new block 2a61d3c27449d6b81af3990223ad76934db132b6029372a86939b8bc767d473f with 1 transactions (Process-5  - pid: 20)
+[2018-03-07 20:26:28] [INFO] (bigchaindb.pipelines.vote) Voting 'valid' for block 2a61d3c27449d6b81af3990223ad76934db132b6029372a86939b8bc767d473f (Process-12 - pid: 43)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      16087/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     56102    16107/docker-contai @/containerd-shim/moby/bc274c19ec50d2ae88d8dfbbf36e5b3201b169f23dfc3cdb420fc8e9a0e864de/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker ps
+CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS              PORTS                      NAMES
+bc274c19ec50        bigchaindb/bigchaindb   "bigchaindb start"       23 minutes ago      Up 23 minutes       0.0.0.0:59984->9984/tcp    bigchaindb
+96b5498c5648        mongo:3.4.9             "docker-entrypoint.s…"   2 hours ago         Up 2 hours          0.0.0.0:27017->27017/tcp   mongodb
+root@ubuntu-s-1vcpu-1gb-blr1-01:~#
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker kill bc274c19ec50
+bc274c19ec50
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker rm bc274c19ec50
+bc274c19ec50
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                      NAMES
+96b5498c5648        mongo:3.4.9         "docker-entrypoint.s…"   2 hours ago         Up 2 hours          0.0.0.0:27017->27017/tcp   mongodb
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs
+"docker logs" requires exactly 1 argument.
+See 'docker logs --help'.
+
+Usage:  docker logs [OPTIONS] CONTAINER [flags]
+
+Fetch the logs of a container
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs bc274c19ec50
+Error response from daemon: No such container: bc274c19ec50
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run \
+>   --detach \
+>   --name=bigchaindb \
+>   --publish=59984:9984 \
+>   --restart=always \
+>   --volume=$HOME/bigchaindb_docker:/data \
+>   bigchaindb/bigchaindb \
+>   start \
+>   --publish=59985:9985
+7b9b29b1a984de269b60867a61bbbc37b7b9d57b69b6520926b1180b9f50a5dc
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+7b9b29b1a984        bigchaindb          0.02%               30.04MiB / 992.3MiB   3.03%               258B / 0B           0B / 0B             1
+96b5498c5648        mongodb             1.31%               80.64MiB / 992.3MiB   8.13%               7.96MB / 108MB      1.54MB / 13MB       71
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+96b5498c5648        mongodb             1.36%               80.64MiB / 992.3MiB   8.13%               7.96MB / 108MB      1.54MB / 13.1MB     71
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs 7b9b29b1a984
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+usage: bigchaindb [-h] [-c CONFIG] [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                  [-y] [-v]
+                  {configure,show-config,export-my-pubkey,init,drop,start,set-shards,set-replicas,add-replicas,remove-replicas}
+                  ...
+bigchaindb: error: unrecognized arguments: --publish=59985:9985
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+                    --                  --                  -- / --               --                  --                  --                  --
+96b5498c5648        mongodb             1.78%               80.73MiB / 992.3MiB   8.14%               7.96MB / 108MB      1.54MB / 13.2MB     71
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+96b5498c5648        mongodb             1.10%               80.64MiB / 992.3MiB   8.13%               7.96MB / 108MB      1.54MB / 13.2MB     71
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker kill 7b9b29b1a984
+7b9b29b1a984
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker rm 7b9b29b1a984
+7b9b29b1a984
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run \
+>   --detach \
+>   --name=bigchaindb \
+>   --publishall \
+> --restart=always \
+>   --volume=$HOME/bigchaindb_docker:/data \
+>   bigchaindb/bigchaindb \
+>   start
+unknown flag: --publishall
+See 'docker run --help'.
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run   --detach   --name=bigchaindb   --publish-all --restart=always   --volume=$HOME/bigchaindb_docker:/data   bigchaindb/bigchaindb   start
+21dba37c6c57c424dc37905cf70e9714e9228bb167bf090497072b3006e15345
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+21dba37c6c57        bigchaindb          0.03%               149.6MiB / 992.3MiB   15.07%              37.2kB / 27.8kB     32.8kB / 0B         33
+96b5498c5648        mongodb             1.31%               90.64MiB / 992.3MiB   9.13%               8MB / 108MB         1.54MB / 13.6MB     79
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+21dba37c6c57        bigchaindb          0.58%               150.3MiB / 992.3MiB   15.15%              51.5kB / 37.1kB     32.8kB / 0B         35
+96b5498c5648        mongodb             1.37%               90.32MiB / 992.3MiB   9.10%               8.01MB / 108MB      1.54MB / 13.7MB     81
+^C
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs 21dba37c6c57
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:47:01] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:47:01] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:47:01] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:47:01] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:47:01] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:47:01] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:47:02] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 59)
+[2018-03-07 20:47:02] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (59) (webapi     - pid: 59)
+[2018-03-07 20:47:02] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 59)
+[2018-03-07 20:47:02] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:47:02] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:47:02] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:47:07] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     79876    18290/docker-contai @/containerd-shim/moby/21dba37c6c57c424dc37905cf70e9714e9228bb167bf090497072b3006e15345/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     79876    18290/docker-contai @/containerd-shim/moby/21dba37c6c57c424dc37905cf70e9714e9228bb167bf090497072b3006e15345/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     79876    18290/docker-contai @/containerd-shim/moby/21dba37c6c57c424dc37905cf70e9714e9228bb167bf090497072b3006e15345/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker kill 21dba37c6c57
+21dba37c6c57
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker rm 21dba37c6c57
+21dba37c6c57
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker run \
+>   --detach \
+>   --name=bigchaindb \
+>   --publish=59984:9984 \
+>   --publish=59985:9985 \
+> --restart=always \
+>   --volume=$HOME/bigchaindb_docker:/data \
+>   bigchaindb/bigchaindb \
+>   start
+f79d2cb941d295b0c45ba90c901953a7c331e128db0ca81162a316b7ce3ee228
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker stats
+
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+f79d2cb941d2        bigchaindb          0.03%               149.9MiB / 992.3MiB   15.10%              37.2kB / 27.8kB     4.1kB / 0B          33
+96b5498c5648        mongodb             1.32%               91.5MiB / 992.3MiB    9.22%               8.08MB / 108MB      1.54MB / 14.1MB     79
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# docker logs f79d2cb941d2
+INFO:bigchaindb.config_utils:Configuration loaded from `/data/.bigchaindb`
+[2018-03-07 20:49:17] [INFO] (bigchaindb.commands.bigchaindb) BigchainDB Version 1.3.0 (MainProcess - pid: 1)
+[2018-03-07 20:49:17] [INFO] (bigchaindb.commands.bigchaindb) Initializing database (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.commands.bigchaindb) Starting BigchainDB main process with public key 8QoGvbM1VrYaBYG2vG5TY3QPZbkvW1V7ELhCWtwMTQ6q (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes) Initializing BigchainDB... (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes) Starting block (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes) Starting voter (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-7  - pid: 14)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-13 - pid: 36)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes) Starting stale transaction monitor (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes) Starting election (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-18 - pid: 48)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes) WebSocket server started (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (bigchaindb.processes)
+****************************************************************************
+*                                                                          *
+*   Initialization complete. BigchainDB Server is ready and waiting.       *
+*   You can send HTTP requests via the HTTP API documented in the          *
+*   BigchainDB Server docs at:                                             *
+*    https://bigchaindb.com/http-api                                       *
+*                                                                          *
+*   Listening to client connections on: 0.0.0.0:9984                       *
+*                                                                          *
+****************************************************************************
+ (MainProcess - pid: 1)
+[2018-03-07 20:49:18] [INFO] (gunicorn.error) Starting gunicorn 19.7.1 (webapi     - pid: 59)
+[2018-03-07 20:49:18] [INFO] (gunicorn.error) Listening at: http://0.0.0.0:9984 (59) (webapi     - pid: 59)
+[2018-03-07 20:49:18] [INFO] (gunicorn.error) Using worker: sync (webapi     - pid: 59)
+[2018-03-07 20:49:18] [INFO] (gunicorn.error) Booting worker with pid: 63 (webapi     - pid: 63)
+[2018-03-07 20:49:18] [INFO] (gunicorn.error) Booting worker with pid: 64 (webapi     - pid: 64)
+[2018-03-07 20:49:18] [INFO] (gunicorn.error) Booting worker with pid: 65 (webapi     - pid: 65)
+[2018-03-07 20:49:23] [INFO] (bigchaindb.backend.mongodb.connection) Closing initial connection to MongoDB (Process-14 - pid: 46)
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy
+tcp6       0      0 :::59984                :::*                    LISTEN      18590/docker-proxy
+tcp6       0      0 :::59985                :::*                    LISTEN      18560/docker-proxy
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     SEQPACKET  LISTENING     9849     1/init              /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     14865    1/init              /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     9839     1/init              /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     9882     1/init              /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     10386    1/init              /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     10451    1/init              /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     83246    18603/docker-contai @/containerd-shim/moby/f79d2cb941d295b0c45ba90c901953a7c331e128db0ca81162a316b7ce3ee228/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14854    1/init              /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     42335    14182/docker-contai @/containerd-shim/moby/96b5498c564825ba2128045fafd937f45f9e135b298f8c6571ef52e97c8008d9/shim.sock
+unix  2      [ ACC ]     STREAM     LISTENING     14952    1459/iscsid         @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     14857    1/init              /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     14858    1/init              /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14859    1/init              /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14864    1/init              /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14866    1/init              /var/run/docker.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17468    1649/docker-contain /var/run/docker/containerd/docker-containerd-debug.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17469    1649/docker-contain /var/run/docker/containerd/docker-containerd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17507    1492/dockerd        /var/run/docker/metrics.sock
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1492/dockerd        /run/docker/libnetwork/02bf455d4c6699027e43f5153b5b3b8b3d66418a9e294490c1c2bfd94b7c5b4c.sock
+root@ubuntu-s-1vcpu-1gb-blr1-01:~#

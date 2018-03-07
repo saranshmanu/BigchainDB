@@ -1,6 +1,8 @@
 const axios = require('axios');
-
-axios.get('https://test.bigchaindb.com/api/v1/')
+// https://test.bigchaindb.com/api/v1/
+// http://localhost:59984/api/v1/
+// http://139.59.12.96:59984/api/v1/
+axios.get('http://139.59.12.96:59984/api/v1/')
     .then(response => {
         console.log(response.data);
     })
@@ -9,7 +11,7 @@ axios.get('https://test.bigchaindb.com/api/v1/')
     });
 
 // get all the information about a transaction using the Asset ID
-axios.get('https://test.bigchaindb.com/api/v1/transactions/2a2543ca997c214c1b1edeb5e302f15259e734af4c47166e519ea0359d3310d4')
+axios.get('http://139.59.12.96:59984/api/v1/transactions/2a2543ca997c214c1b1edeb5e302f15259e734af4c47166e519ea0359d3310d4')
     .then(response => {
         console.log(response.data);
     })
@@ -18,7 +20,7 @@ axios.get('https://test.bigchaindb.com/api/v1/transactions/2a2543ca997c214c1b1ed
     });
 
 // Use the public key of the user to track all the transactions made by the user
-axios.get('https://test.bigchaindb.com/api/v1/outputs?public_key=GEkKQDKFf5qzi7WwY2VzwBd3VyLhCu1aSaWjSAU7dCpo')
+axios.get('http://139.59.12.96:59984/api/v1/outputs?public_key=GEkKQDKFf5qzi7WwY2VzwBd3VyLhCu1aSaWjSAU7dCpo')
     .then(response => {
         console.log(response.data);
     })

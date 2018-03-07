@@ -1,0 +1,60 @@
+docker pull bigchaindb/bigchaindb
+
+docker run \
+  --interactive \
+  --rm \
+  --tty \
+  --volume $HOME/bigchaindb_docker:/data \
+  --env BIGCHAINDB_DATABASE_HOST=172.17.0.1 \
+  bigchaindb/bigchaindb \
+  -y configure \
+  mongodb
+
+docker run \
+  --detach \
+  --name=mongodb \
+  --publish=27017:27017 \
+  --restart=always \
+  --volume=$HOME/mongodb_docker/db:/data/db \
+  --volume=$HOME/mongodb_docker/configdb:/data/configdb \
+  mongo:3.4.9 --replSet=bigchain-rs
+
+docker run \
+  --detach \
+  --name=bigchaindb \
+  --publish=59984:9984 \
+  --publish=59985:9985 \
+  --restart=always \
+  --volume=$HOME/bigchaindb_docker:/data \
+  bigchaindb/bigchaindb \
+  start
+
+Check the logs of the docker container for bigchaindb and mongodb and verify the service is up and running.
+
+If any of the service is not working
+
+Remove the container in which the service is not running with following commands
+docker rm CONTAINERID
+docker kill CONTAINERID
+
+Then restart the killed service container using the commands of docker given above
+
+To check logs of a given docker container
+docker logs CONTAINERID
+
+To check all the containers running
+docker ps
+
+To check the status of all the ports running
+netstat -lnp
+
+root@ubuntu-s-1vcpu-1gb-blr1-01:~# netstat -lnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1864/sshd
+tcp6       0      0 :::27017                :::*                    LISTEN      14157/docker-proxy      tells that mongodb service is running at port of 27017 and can be accesses by IPv6 and IPV4 address
+tcp6       0      0 :::59984                :::*                    LISTEN      18590/docker-proxy      tells that bigchaindb service is running at port of 59984 and can be accesses by IPv6 and IPV4 address
+tcp6       0      0 :::59985                :::*                    LISTEN      18560/docker-proxy      tells that websocket service is running at port of 59985 and can be accesses by IPv6 and IPV4 address
+tcp6       0      0 :::22                   :::*                    LISTEN      1864/sshd
+
+

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1047434-f299-4358-a2d3-7a6e1ccd1e77" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/how to run the server" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/bigchainDB.js" afterPath="$PROJECT_DIR$/bigchainDB.js" />
       <change beforePath="$PROJECT_DIR$/networkEngine.js" afterPath="$PROJECT_DIR$/networkEngine.js" />
@@ -22,18 +23,18 @@
       <file leaf-file-name="networkEngine.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/networkEngine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="46" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bigchainDB.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bigchainDB.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bigchainDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="104" column="61" lean-forward="true" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+            <state relative-caret-position="195">
+              <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -42,8 +43,8 @@
       <file leaf-file-name="webSocketStream.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webSocketStream.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -54,6 +55,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="how to run the server" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/how to run the server">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="56" column="160" lean-forward="false" selection-start-line="56" selection-start-column="160" selection-end-line="56" selection-end-column="160" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logs to check if anything goes wrong" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logs to check if anything goes wrong">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24090">
+              <caret line="1606" column="0" lean-forward="true" selection-start-line="1606" selection-start-column="0" selection-end-line="1606" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,6 +99,8 @@
         <option value="$PROJECT_DIR$/networkEngine.js" />
         <option value="$PROJECT_DIR$/bigchainDB.js" />
         <option value="$PROJECT_DIR$/webSocketStream.js" />
+        <option value="$PROJECT_DIR$/how to run the server" />
+        <option value="$PROJECT_DIR$/logs to check if anything goes wrong" />
       </list>
     </option>
   </component>
@@ -149,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.webSocketStream.js">
+  <component name="RunManager" selected="Node.js.bigchainDB.js">
     <configuration name="bigchainDB.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="bigchainDB.js" working-dir="$PROJECT_DIR$" />
     <configuration name="decodeHash.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="decodeHash.js" working-dir="$PROJECT_DIR$" />
     <configuration name="networkEngine.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="networkEngine.js" working-dir="$PROJECT_DIR$" />
@@ -162,8 +185,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.webSocketStream.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.bigchainDB.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.bigchainDB.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.webSocketStream.js" />
         <item index="2" class="java.lang.String" itemvalue="Node.js.networkEngine.js" />
         <item index="3" class="java.lang.String" itemvalue="Node.js.decodeHash.js" />
       </list>
@@ -187,12 +210,12 @@
       <workItem from="1520325401188" duration="265000" />
       <workItem from="1520350344988" duration="504000" />
       <workItem from="1520352592720" duration="458000" />
-      <workItem from="1520355066192" duration="9647000" />
+      <workItem from="1520355066192" duration="13149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33709000" />
+    <option name="totallyTimeSpent" value="37211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -442,22 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decodeHash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkEngine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/7.3.0/core-modules/events.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4325">
@@ -466,18 +473,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocketStream.js">
+    <entry file="file://$PROJECT_DIR$/networkEngine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bigchainDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="104" column="61" lean-forward="true" selection-start-line="104" selection-start-column="61" selection-end-line="104" selection-end-column="61" />
+        <state relative-caret-position="195">
+          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decodeHash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSocketStream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/how to run the server">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="160" lean-forward="false" selection-start-line="56" selection-start-column="160" selection-end-line="56" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs to check if anything goes wrong">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24090">
+          <caret line="1606" column="0" lean-forward="true" selection-start-line="1606" selection-start-column="0" selection-end-line="1606" selection-end-column="0" />
           <folding />
         </state>
       </provider>
