@@ -10,6 +10,9 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var longitude: UILabel!
+    @IBOutlet weak var latitude: UILabel!
     @IBOutlet weak var blockID: UILabel!
     @IBOutlet weak var assetID: UILabel!
     @IBOutlet weak var transactionID: UILabel!

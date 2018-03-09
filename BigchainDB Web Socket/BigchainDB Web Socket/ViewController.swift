@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var map: MKMapView!
     var transactions = [NSDictionary]()
+    var transactionInformation = [NSDictionary]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return transactions.count
@@ -42,6 +43,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.transactionID.text = transactions[indexPath.row]["transaction_id"] as! String
         cell.assetID.text = transactions[indexPath.row]["asset_id"] as! String
         cell.blockID.text = transactions[indexPath.row]["block_id"] as! String
+        cell.longitude.text = String(describing: transactionInformation[indexPath.row]["longitude"]!)
+        cell.latitude.text = String(describing: transactionInformation[indexPath.row]["latitude"]!)
+        cell.date.text = transactionInformation[indexPath.row]["date"] as! String
         return cell
     }
     
@@ -66,10 +70,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         transactionTable.delegate = self
         transactionTable.dataSource = self
-        
         map.mapType = MKMapType.standard
-        
-        let socket = WebSocket("wss://test.bigchaindb.com/api/v1/streams/valid_transactions")
+        let socket = WebSocket("ws://139.59.12.96:59985/api/v1/streams/valid_transactions")
         socket.event.open = {
             print("opened")
         }
@@ -82,7 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         socket.event.message = { message in
             let x = self.convertToDictionary(text: String(describing: message))
             self.transactions = [x as! NSDictionary] + self.transactions
-            Alamofire.request("https://test.bigchaindb.com/api/v1/transactions/" + String(describing: x!["asset_id"]!)).responseJSON{
+            Alamofire.request("http://139.59.12.96:59984/api/v1/transactions/" + String(describing: x!["asset_id"]!)).responseJSON{
                 response in
                 let x:NSDictionary = response.result.value! as! NSDictionary
                 let y:NSDictionary = x["metadata"] as! NSDictionary
@@ -91,12 +93,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let latitude:CLLocationDegrees = Double(y["latitude"] as! String)!
                         let longitude:CLLocationDegrees = Double(y["longitude"] as! String)!
                         let d = y["datetime"] as! String
+                        let y = [
+                            "latitude":latitude,
+                            "longitude":longitude,
+                            "date":d
+                            ] as [String : Any]
+                        self.transactionInformation = [y as NSDictionary] + self.transactionInformation
                         self.setMap(latitude: latitude, longitude: longitude, date: d)
+                        self.transactionTable.reloadData()
                     }
                 } catch {
                     // do nothing
                 }
-                self.transactionTable.reloadData()
             }
         }
     }

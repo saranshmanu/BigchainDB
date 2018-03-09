@@ -1,3 +1,13 @@
+Mongodb server config
+139.59.55.198:27017
+Auth - no authentication
+
+Host URL - 139.59.55.198
+Port running - 59985 - Websocket
+             - 59984 - BigchainDB
+             - 27017 - mongoDB
+             - 22 - SSH - user - root
+
 docker pull bigchaindb/bigchaindb
 
 docker run \

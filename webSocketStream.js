@@ -12,13 +12,13 @@ ws.on('open', () => {
 
 ws.on('message', (data) => {
     let json = JSON.parse(data)
-    // axios.get('https://test.bigchaindb.com/api/v1/transactions/' + String(json.transaction_id))
-    //     .then(response => {
-    //         console.log(response.data['metadata']);
-    //     })
-    //     .catch(error => {
-    //         console.log(error);
-    //     })
+    axios.get('http://139.59.12.96:59984/api/v1/transactions/' + String(json.transaction_id))
+        .then(response => {
+            console.log(response.data['metadata']);
+        })
+        .catch(error => {
+            console.log(error);
+        })
     console.log("\nTransactionId: ", json.transaction_id)
     console.log("AssetId: ", json.asset_id)
     console.log("BlockId: ", json.block_id)

@@ -1,7 +1,9 @@
 const axios = require('axios');
+
 // https://test.bigchaindb.com/api/v1/
 // http://localhost:59984/api/v1/
 // http://139.59.12.96:59984/api/v1/
+
 axios.get('http://139.59.12.96:59984/api/v1/')
     .then(response => {
         console.log(response.data);
